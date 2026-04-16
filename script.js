@@ -26,6 +26,27 @@ window.addEventListener('scroll', function() {
         header.style.boxShadow = '0 4px 15px rgba(0,0,0,0.3)';
         header.style.transition = '0.3s ease';
     } else {
+
+        // ১. কন্টাক্ট কার্ডে মাউস নিলে হালকা এনিমেশন (Hover Effect)
+const socialCards = document.querySelectorAll('.social-card');
+
+socialCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-5px) scale(1.02)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0) scale(1)';
+    });
+});
+
+// ২. কন্টাক্ট লিঙ্কে ক্লিক করলে ছোট একটি কনসোল মেসেজ (অপশনাল - ট্র্যাক করার জন্য)
+const contactLinks = document.querySelectorAll('.info-item p a');
+contactLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        console.log("Contact initiated via: " + link.innerText);
+    });
+});
         header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
     }
 });
