@@ -2,6 +2,12 @@
 console.log("%c MD. ASIKUR RAHMAN ", "background: #2c3e50; color: #fff; font-size: 20px; padding: 10px;");
 
 // ২. মোবাইল মেনু টগল লজিক (Header Section)
+const menuToggle = document.querySelector('.menu-toggle');
+const navList = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
 const mobileMenu = document.getElementById('mobile-menu');
 const navList = document.getElementById('nav-list');
 
