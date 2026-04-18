@@ -1,5 +1,5 @@
 // ১. ব্রাউজার কনসোলে একটি স্বাগতম বার্তা (ডেভেলপারদের জন্য)
-console.log("%c Welcome to Rakib Shimanto's Portfolio ", "background: #2c3e50; color: #fff; font-size: 20px; padding: 10px;");
+console.log("%c MD. ASIKUR RAHMAN ", "background: #2c3e50; color: #fff; font-size: 20px; padding: 10px;");
 
 // ২. স্মুথ স্ক্রলিং (Smooth Scrolling)
 // মেনু লিঙ্কে ক্লিক করলে পেজটি লাফিয়ে না গিয়ে ধীরে ধীরে স্ক্রল হবে
